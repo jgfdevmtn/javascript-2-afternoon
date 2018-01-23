@@ -15,7 +15,12 @@
 */
 
 //Code here
+let me = {
+	name:'John',
+	age:21
+}
 
+alert(me.name)
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +31,14 @@
 */
 
 //Code here
-
+let favoriteThings = {
+	band:"Led Zeppelin",
+	food:"Creme Brulee",
+	person:"Myself",
+	book:"Think And Grow Rich",
+	movie:"Up",
+	holiday:"Christmas"
+}
 
 
 /*
@@ -36,13 +48,15 @@
 //Code here
 
 
-
+favoriteThings.car = "MCLAREN";
+favoriteThings.brand = "Patagonia";
 /*
   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 ////////// PROBLEM 3 //////////
@@ -57,6 +71,11 @@
 
 //Code here
 
+let backPack = {};
+let item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'grey';
+
 
 
 /*
@@ -65,6 +84,7 @@
 
 //Code here
 
+alert(backPack);
 
 
 /*
@@ -75,7 +95,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
-
+console.log(backPack);
 
 ////////// PROBLEM 4 //////////
 
@@ -98,6 +118,11 @@ var user2 = {
 
 //Code Here
 
+user = user2;
+user.name = 'Tyler S. McGinnis';
+user.email = 'tyler.mcginnis@devmounta.in';
+
+
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -110,7 +135,7 @@ var user2 = {
 
 //Code Here
 
-
+let methodCollection = {};
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
@@ -119,7 +144,8 @@ var user2 = {
 
 //Code Here
 
-
+methodCollection.alertHello = () => {alert('hello')};
+methodCollection.logHello = () => {console.log('hello')};
 
 /*
   Now call your alertHello and logHello methods.
@@ -127,6 +153,8 @@ var user2 = {
 
 //Code Here
 
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -138,6 +166,14 @@ var user2 = {
 
 //Code Here
 
+let makePerson = (name, birthday, ssn) => {
+	let person = {
+		name:'John',
+		birthday:'12/28/1996',
+		ssn: 'SURE BRO'
+	};
+	return person;
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -149,4 +185,10 @@ var user2 = {
 
 //Code Here
 
-
+let makeCard = (cardNumber, expirationDate, securityCode) => {
+	return {
+		cardNumber,
+		expirationDate,
+		securityCode
+	};
+}
